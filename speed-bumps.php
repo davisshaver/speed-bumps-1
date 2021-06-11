@@ -35,7 +35,7 @@ class Speed_Bumps {
 	 * Prevent the unserialization of the "SINGLETON" instance.
 	 * @return void
 	 **/
-	private function __wakeup(){}
+	public function __wakeup(){}
 
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) ) {
